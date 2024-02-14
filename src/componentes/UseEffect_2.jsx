@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-export default function UseEffect_0() {
+export default function UseEffect_2() {
     const [count, setCount] = useState(0);
     const [booleano,setOutra] = useState(false)
 
@@ -9,8 +9,11 @@ export default function UseEffect_0() {
 
         return (()=>console.log('chao'))
       } 
-    
-    useEffect(funcion);
+      let conta=0;
+    const funEvento = ()=>{ 
+      conta +=1;
+      console.log('Conta é : ', conta) }
+    useEffect(funcion,[count,conta]);
 
   return (
     <div>
@@ -20,6 +23,7 @@ export default function UseEffect_0() {
       </button>
       <h3>Observa cómo se actualiza useEffect sen un control cada vez que clico o botón seguinte</h3>
       <button onClick={()=> setOutra(!booleano)}>Actualiza outra</button>
+      <button onClick={funEvento}>funEvento</button>
     </div>
   );
 }

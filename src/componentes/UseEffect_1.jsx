@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-export default function UseEffect_0() {
+export default function UseEffect_1() {
     const [count, setCount] = useState(0);
     const [booleano,setOutra] = useState(false)
 
@@ -10,7 +10,7 @@ export default function UseEffect_0() {
         return (()=>console.log('chao'))
       } 
     
-    useEffect(funcion);
+    useEffect(funcion,[]);
 
   return (
     <div>
