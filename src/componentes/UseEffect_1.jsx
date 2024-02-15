@@ -7,7 +7,7 @@ export default function UseEffect_1() {
         document.title = `Clicaches ${count} veces`;
         console.log('estou en useEffect')
 
-        return (()=>console.log('chao'))
+        //return (()=>console.log('chao'))
       } 
     
     useEffect(funcion,[]);
